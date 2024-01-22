@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realince Digital Clone</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/WhatsApp Image 2024-01-21 at 11.36.22 PM.jpeg"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="topbar">
+          <span>Find a store</span>
+          <span>Buying guides</span>
+          <span>Contact us</span>
+        </div>
+        <div class="header_primary">
+          <div class="logo">
+            <a href="index.html"><img src="assets/images/rd_logo.svg" /></a>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Find your favorite products" />
+            <button
+              type="button"
+              aria-label="Search"
+              class="searchPanel__search"
+              id="RIL_HomeSearchButton"
+            >
+              <i class="fa fa-search" style="color: rgb(187, 187, 187)"></i>
+            </button>
+          </div>
+          <div class="header_primary_links">
+            <span>Select your Pin Code</span>
+            <span>Cart</span>
+            <a href="log-in.html" class="login"><span>Login</span></a>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul class="nav_links">
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              MOBILES & TABLETS <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Smartphones</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Headphones & Headsets</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">AI Learning Robots</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Power Banks</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">eSlates</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Smartwatches</a></h4>
+                  <ul>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Firebolt</a></li>
+                    <li><a href="#">Noise</a></li>
+                    <li><a href="#">Boat</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Tablets & eReaders</a></h4>
+                  <ul>
+                    <li><a href="#">Every Day use Tablets below 15000</a></li>
+                    <li><a href="#">Premium Tablets, Above 15001</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Accessories</a></h4>
+                  <ul>
+                    <li><a href="#">Tablet Accessories</a></li>
+                    <li><a href="#">Mobile Accessories</a></li>
+                    <li><a href="#">Mobile Grips & Stands</a></li>
+                    <li><a href="#">Car Mobile Holders</a></li>
+                    <li><a href="#">Memory Cards</a></li>
+                    <li><a href="#">Cables & Cords</a></li>
+                    <li><a href="#">Chargers & Adapters</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              TELEVISIONS <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Televisions</a></h4>
+                  <ul>
+                    <li><a href="#">Smart TVs</a></li>
+                    <li><a href="#">32 Inch TVs</a></li>
+                    <li><a href="#">43 Inch TVs</a></li>
+                    <li><a href="#">55 Inch TVs</a></li>
+                    <li><a href="#">Android TVs</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Gaming</a></h4>
+                  <ul>
+                    <li><a href="#">Gaming Consoles</a></li>
+                    <li><a href="#">Gaming Accessories</a></li>
+                    <li><a href="#">Gaming Titles</a></li>
+                    <li><a href="#">Gaming Controllers</a></li>
+                    <li><a href="#">Android TVs</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>
+                    <a href="#">Reconnect Disney | Marvel Audio Collection</a>
+                  </h4>
+                </div>
+                <div>
+                  <h4><a href="#">Projectors</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">TV & Audio Accessories</a></h4>
+                  <ul>
+                    <li><a href="#">Virtual Reality Headsets</a></li>
+                    <li><a href="#">Stabilizers & Surge Protectors</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Streaming Devices</a></h4>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              AUDIO <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Headphones & Headsets</a></h4>
+                  <ul>
+                    <li><a href="#">True Wireless</a></li>
+                    <li><a href="#">Bluetooth Neckbands</a></li>
+                    <li><a href="#">Earphones</a></li>
+                    <li><a href="#">Bluetooth Headphones</a></li>
+                    <li><a href="#">Gaming Headset</a></li>
+                    <li><a href="#">Wired Headphones</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Speakers & Soundbars</a></h4>
+                  <ul>
+                    <li><a href="#">Bluetooth Speakers</a></li>
+                    <li><a href="#">Smart Speakers</a></li>
+                    <li><a href="#">Home Theatre Systems</a></li>
+                    <li><a href="#">Specialty Speakers</a></li>
+                    <li><a href="#">Soundbars</a></li>
+                    <li><a href="#">Party Speakers</a></li>
+                    <li><a href="#">Multimedia Speakers</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Musical Instruments</a></h4>
+                  <ul>
+                    <li><a href="#">Guitars and Ukuleles</a></li>
+                    <li><a href="#">Microphones</a></li>
+                    <li><a href="#">Musical Keyboards</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              HOME APPLIANCES
+              <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Air Conditioners</a></h4>
+                  <ul>
+                    <li><a href="#">Split Air Conditioners</a></li>
+                    <li><a href="#">Window Air Conditioners</a></li>
+                    <li><a href="#">Smart Air Conditioners</a></li>
+                    <li><a href="#">Energy Efficient Air Conditioners</a></li>
+                    <li><a href="#">1 ton Air Conditioners</a></li>
+                    <li><a href="#">1.5 ton Air Conditioners</a></li>
+                    <li><a href="#">5 star Air Conditioners</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Washing Machines</a></h4>
+                  <ul>
+                    <li><a href="#">Fully Automatic Front Load</a></li>
+                    <li><a href="#">Fully Automatic Top Load</a></li>
+                    <li><a href="#">Semi-Automatic Top Load</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Refrigerators</a></h4>
+                  <ul>
+                    <li><a href="#">Single Door</a></li>
+                    <li><a href="#">Double Door</a></li>
+                    <li><a href="#">Side by Side Refrigerators</a></li>
+                    <li><a href="#">Convertible</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Vacuum Cleaners</a></h4>
+                  <ul>
+                    <li><a href="#">Robotic Vacuum Cleaners</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Radiators</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Dishwashers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Fans</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Cloth Dryers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Geysers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Room Heaters</a></h4>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              COMPUTERS <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Laptops</a></h4>
+                  <ul>
+                    <li><a href="#">Basic use laptops</a></li>
+                    <li><a href="#">Student Laptops</a></li>
+                    <li><a href="#">Thin and light Laptops</a></li>
+                    <li><a href="#">Multi-Tasking Laptops</a></li>
+                    <li><a href="#">Gaming Laptops</a></li>
+                    <li><a href="#">Content creator Laptops</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Computer Accessories</a></h4>
+                  <ul>
+                    <li><a href="#">Laptop Screen Protectors</a></li>
+                    <li><a href="#">Computer Networking Cables</a></li>
+                    <li><a href="#">Laptop Chargers & Adaptor</a></li>
+                    <li><a href="#">Laptop Batteries</a></li>
+                    <li><a href="#">Laptop Bags & Sleeves</a></li>
+                    <li><a href="#">Laptop Cooling Pad</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Internet Connectivity Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Routers</a></li>
+                    <li><a href="#">WiFi Range Extenders</a></li>
+                    <li><a href="#">Wireless USB Adapters</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Data Storage Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Memory Cards</a></li>
+                    <li><a href="#">Pen Drives & OTG Drives</a></li>
+                    <li><a href="#">Hard Disks & SSD</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Input Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Keyboards</a></li>
+                    <li><a href="#">Computer Mouse</a></li>
+                    <li><a href="#">Stylus Pens</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Printers & Inks</a></h4>
+                  <ul>
+                    <li><a href="#">Printers</a></li>
+                    <li><a href="#"> Toners & Ink Cartridges</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Computer Monitors</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Desktops & All-In-Ones</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Bluetooth & WiFi Speakers</a></h4>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              CAMERAS <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">DSLR Cameras</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Binoculars</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Mirrorless Cameras</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Camera Lens</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Point & Shoot Cameras</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">ProSumer Cameras</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Action Cameras</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Photo Storage Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Memory Cards</a></li>
+                    <li><a href="#">Pen Drives</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Digital Camera Accessories</a></h4>
+                  <ul>
+                    <li><a href="#">Camera Batteries & Chargers</a></li>
+                    <li><a href="#">Camera bags & cases</a></li>
+                    <li><a href="#">Tripods & Monopods</a></li>
+                    <li><a href="#">Action Camera Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              KITCHEN APPLIANCES
+              <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Mixers</a></h4>
+                  <ul>
+                    <li><a href="#">2 Jar</a></li>
+                    <li><a href="#">3 Jar</a></li>
+                    <li><a href="#">4 Jar</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Cooktops</a></h4>
+                  <ul>
+                    <li><a href="#">1 Burner</a></li>
+                    <li><a href="#">2 Burner</a></li>
+                    <li><a href="#">3 Burner</a></li>
+                    <li><a href="#">4 Burner</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Juicer</a></h4>
+                  <ul>
+                    <li><a href="#">1 Jar</a></li>
+                    <li><a href="#">2 Jar</a></li>
+                    <li><a href="#">3 Jar</a></li>
+                    <li><a href="#">4+ Jar</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Water Purifiers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Induction Cooktops</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Hand Blender</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Electric Kettle</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Microwaves Oven</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Coffee/Tea Makers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Air Fryer</a></h4>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              PERSONAL CARE <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Hygiene & Personal Care</a></h4>
+                  <ul>
+                    <li><a href="#">Digital Thermometers</a></li>
+                    <li><a href="#">Massagers</a></li>
+                    <li><a href="#">Misc. Care Devices</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Shavers & Trimmers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Epilators</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Hair Dryers & Stylers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Weighing Scales</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Irons</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Garment Steamers</a></h4>
+                </div>
+              </div>
+            </div>
+            <div
+              onmouseover="dropdownOpen(this)"
+              onmouseout="dropdownClose(this)"
+            >
+              ACCESSORIES <i class="fa fa-angle-down"></i>
+              <div id="nav_links_dropdown" class="hide nav_links_dropdown">
+                <div>
+                  <h4><a href="#">Smart Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Smart Plugs</a></li>
+                    <li><a href="#">Smart Cameras</a></li>
+                    <li><a href="#">Smart Sensors</a></li>
+                    <li><a href="#">Smart Lights</a></li>
+                    <li><a href="#">Smart Speakers</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Data Storage Devices</a></h4>
+                  <ul>
+                    <li><a href="#">Memory Cards</a></li>
+                    <li><a href="#">Pen Drives & OTG Drives</a></li>
+                    <li><a href="#">Hard Disks & SSD</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Mounts & Stands</a></h4>
+                  <ul>
+                    <li><a href="#">Air Conditioner Stands</a></li>
+                    <li><a href="#">Car Mobile Holders</a></li>
+                    <li><a href="#">Mobile Grips & Stands</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><a href="#">Batteries</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Power Banks</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Cables & Cords</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Indoor Lighting</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Routers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Keyboards</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Screen Guards & Protectors</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Bluetooth & WiFi Speakers</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#">Chargers & Adapters</a></h4>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="register_form_container">
+          <div class="register_form_div">
+            <div class="register_form">
+              <form id="form">
+                <h3>Register</h3><br>
+                <input id="name" type="name" placeholder="Enter Your  Full Name" required/>
+                <input id="email" type="email" placeholder="Enter Your Email" required/>
+                <input id="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  required
+                />
+                <button type="submit">Sign Up</button>
+                <a href="log-in.html"><h5>Login</h5></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_links">
+          <div>
+            <h4>PRODUCT CATEGORIES</h4>
+            <ul>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">DSLR Cameras</a></li>
+              <li><a href="#">Televisions</a></li>
+              <li><a href="#">Air Conditioners</a></li>
+              <li><a href="#">Refrigerators</a></li>
+              <li><a href="#">Kitchen Appliances</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Personal Care & Grooming</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>SITE INFO</h4>
+            <ul>
+              <li><a href="#">About Reliance Digital</a></li>
+              <li><a href="#">resQ Services</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Corporate Enquires</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>RESOURCE CENTRE</h4>
+            <ul>
+              <li><a href="#">Product Reviews</a></li>
+              <li><a href="#">Buying Guides</a></li>
+              <li><a href="#">How Tos</a></li>
+              <li><a href="#">Featured Stories</a></li>
+              <li><a href="#">Events & Happenings</a></li>
+              <li><a href="#">Nearest Store</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>POLICIES</h4>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Cancellation and Return Policy</a></li>
+              <li><a href="#">Pricing and Payments Policy</a></li>
+              <li><a href="#">Shipping and Delivery Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">E-waste Recycling Policy</a></li>
+              <li><a href="#">EMI and Additional Cashback T&C</a></li>
+              <li><a href="#">RelianceOne Loyalty Program T&C</a></li>
+              <li><a href="#">Caution Notice</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="follow_us">
+          <div class="social_links">
+            <h4>Follow Us</h4>
+            <div>
+              <a><i class="fab fa-facebook-square"></i></a>
+              <a><i class="fab fa-twitter"></i></a>
+              <a><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="download">
+            <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+            <div>
+              <a><img src="assets/images/google_play_store.png" /></a>
+              <a><img src="assets/images/ios_app_store_icon.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="Disclaimer">
+          <h4>Disclaimer</h4>
+          <p>
+            Product prices, offers and availability are subject to change from
+            time to time. All prices are inclusive of taxes. Product colours &
+            images are only for illustration and they may not exactly match with
+            the actual product. Product specs are subject to change & may vary
+            from actual product. While every care is taken to avoid inaccuracies
+            in content, these are provided as is, without warranty of any kind.
+          </p>
+        </div>
+        <div class="copy_right">
+          <h4>© 2024 Reliance Digital clone. All Rights Reserved.</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/signup.js"></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script> -->
+  </body>
+</html>
